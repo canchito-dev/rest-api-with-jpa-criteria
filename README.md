@@ -138,7 +138,7 @@ As you may have noticed, we have created the relationship between both entities 
 
 
 ## Using the CriteriaBuilder
-The main factory of the criteria API and all its elements, is the [CriteriaBuilder](https://www.objectdb.com/api/java/jpa/criteria/CriteriaBuilder). In other words, the [CriteriaBuilder](https://www.objectdb.com/api/java/jpa/criteria/CriteriaBuilder) is used to construct criteria queries, compound selections, expressions, predicates, orderings, to mention some. The `CriteriaBuilder` interface defines functionality that is specific to top-level queries. The `Root` type is the from clause. Please notice that query roots always reference entities. And finally, we have the `Join`. A `Join` to an entity, embeddable, or basic type.
+The main factory of the criteria API and all its elements, is the `CriteriaBuilder`. In other words, the `CriteriaBuilder` is used to construct criteria queries, compound selections, expressions, predicates, orderings, to mention some. The `CriteriaBuilder` interface defines functionality that is specific to top-level queries. The `Root` type is the from clause. Please notice that query roots always reference entities. And finally, we have the `Join`. A `Join` to an entity, embeddable, or basic type.
 
 ```java
 public Page<Author> search(List<SearchCriteria> paramsAuthor, List<SearchCriteria> paramsBooks, Pageable pageable) {
